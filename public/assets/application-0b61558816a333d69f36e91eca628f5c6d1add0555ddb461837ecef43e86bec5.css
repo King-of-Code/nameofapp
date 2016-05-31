@@ -1,0 +1,102 @@
+/* line 4, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+body {
+  padding-top: 6%;
+}
+
+/* line 8, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  color: red;
+  font-family: Georgia;
+}
+
+/* line 13, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+.company-logo img {
+  width: 50%;
+  height: 50%;
+}
+
+/* line 18, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+nav ul {
+  color: white;
+  text-shadow: 1px 1px 1px red;
+}
+
+/* line 23, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+.nav-logo img {
+  height: 140%;
+}
+
+/**** Footer ****/
+/* line 29, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+footer {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* line 34, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+footer {
+  color: white;
+  text-shadow: 1px 1px 1px red;
+}
+
+/* line 39, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+.footer-buttons {
+  float: right;
+}
+
+/* line 43, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+.fb-like {
+  padding: 2%;
+  padding-top: 0px;
+}
+
+/* line 48, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+* {
+  margin: 0;
+}
+
+/* line 51, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 54, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -112px;
+}
+
+/* line 59, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/* line 63, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+
+/* line 66, c:/Sites/nameofapp/app/assets/stylesheets/static_pages.scss */
+.site-footer {
+  background: black;
+}
+
+/**** End footer ****/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
