@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 *.rbc
 capybara-*.html
 .rspec
@@ -120,5 +120,4 @@ $RECYCLE.BIN/
 *.msp
 
 # Windows shortcuts
->>>>>>> 078c5994df205ec3f78781450ec9dc5b09a321d8
 *.lnk
