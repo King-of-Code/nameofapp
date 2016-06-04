@@ -48,17 +48,19 @@ footer {
 * {
   margin: 0;
 }
-html, body {
+html, body, .content {
   height: 100%;
 }
 .content {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -142px; 
+  margin : 0px ;
 }
 .content:after {
   content: "";
   display: block;
+  padding-bottom : 20px ;
 }
 .site-footer, .contentafter {
   height: 142px; 
