@@ -21,3 +21,22 @@
 html .content {
 	height : 100% ;
 }
+
+
+.carousel-inner
+.item
+img {
+	margin : auto ;
+	padding-top : 5% ;
+}
+
+.carousel-caption {
+	position : relative ;
+	left : auto ;
+	right : auto ;
+}
+
+.carousel-caption {
+	color : red ;
+	text-shadow : 1px 1px 1px black ;
+}
