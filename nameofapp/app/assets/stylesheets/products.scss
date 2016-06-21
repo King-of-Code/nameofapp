@@ -11,6 +11,8 @@
 	text-align : center ;
 }
 
+// Title end //
+
 // Title typography // 
 
 .products h1 {
@@ -22,7 +24,9 @@ html .content {
 	height : 100% ;
 }
 
+// Title typography end // 
 
+// Carousel //
 .carousel-inner
 .item
 img {
@@ -36,7 +40,17 @@ img {
 	right : auto ;
 }
 
-.carousel-caption {
+// Carousel end //
+
+// Carousel typography //
+.carousel-caption a:visited {
 	color : red ;
 	text-shadow : 1px 1px 1px black ;
 }
+
+.carousel-caption a:hover {
+	background : red ;
+	color : white ;
+}
+
+// Carousel typography end //
