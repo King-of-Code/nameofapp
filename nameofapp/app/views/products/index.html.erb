@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html>
+<div class="container-fluid">
 
-  <div class="content products">
+  <p id="notice"><%= notice %></p>
 
-    <p id="notice"><%= notice %></p>
+  <h1>List of a few Products</h1>
 
-    <h1>One of Many Products</h1>
-
-    <div class="container-fluid">
-      <div class="row">
-          <%= render @products %>
-      </div>
+  <div class="container-fluid">
+    <div class="row">
+      <%= render @products %>
     </div>
-
-    <br>
-
-    <%= link_to 'New Product', new_product_path %>
   </div>
 
-</html>
+  <br>
+
+  <%= link_to 'New Product', new_product_path %>
+</div>

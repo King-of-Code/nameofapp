@@ -1,7 +1,5 @@
-
+html,
 body {
-	padding-top : 9% ;
-	margin : 0 ;
 	height : 100% ;
 }
 
@@ -10,10 +8,13 @@ h1 {
 	font-family : Georgia ;
 }
 
-.company-logo img {
-	text-align : center ;
-	margin-bottom : 0 ;
+.navbar {
 	position : relative ;
+	margin : 0 ;
+}
+
+.company-logo {
+	
 }
 
 .footer-logo img {
@@ -38,33 +39,22 @@ nav ul{
 footer {
 	text-align : center ;
 	padding-top : 50px ;
+	padding-bottom : 4% ;
+	margin-left : -15px ;
 }
 
 footer {
 	color : white ;
 	text-shadow : 1px 1px 1px red ;
+	background-color : black ;
 }
 
-* {
-  margin: 0;
-}
-html, body, .content {
-  height: 100%;
-}
 .content {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -142px; 
-  margin : 0px ;
+	margin-bottom : 12% ;
 }
-.site-footer, .contentafter {
-  height: 142px; 
-}
-.site-footer {
-  background: black;
-}
-/**** End footer ****/
 
+
+/**** End footer ****/
 
 
 
