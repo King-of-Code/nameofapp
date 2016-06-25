@@ -31,7 +31,7 @@
           <%= image_tag("MnM logo.jpg") %>
         </div> <!--end Music in Motion logo -->
 
-        <%= form_tag("/products", method: "get", :id => "search_bar") do %>
+        <%= form_tag("/products", method: "get", id: "search_bar") do %>
           <%= label_tag(:q, "Search for:") %>
           <%= text_field_tag(:q) %>
           <%= submit_tag("Search") %>

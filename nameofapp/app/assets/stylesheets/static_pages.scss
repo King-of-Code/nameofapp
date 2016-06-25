@@ -52,10 +52,7 @@ input[type=submit] {
 }
 
 #search_bar 
-button 
-input 
-select,
-textarea {
+#q {
 	color : blue ;
 }
 
@@ -66,8 +63,11 @@ textarea {
 	text-align : center ; 
 }
 
-#product_form,
-input {
+#product_form
+button, 
+input, 
+select, 
+textarea {
 	color : blue ;
 }
 
@@ -76,6 +76,19 @@ input {
 }
 
 /**** Edit Form end ****/
+
+/**** Contact Form****/
+
+
+#contact_send {
+	color : blue ;
+}
+
+#contact_page_logo {
+	margin-left : 20% ;
+	padding-top : 5% ;
+}
+/**** Contact Form end ****/
 
 /**** Footer ****/
 
