@@ -34,6 +34,48 @@ nav ul{
 	height : 140% ;
 }
 
+.products h1 {
+	text-align : center ;
+}
+
+/**** Search bar ****/
+#search_bar
+label {
+	color : white ;
+	text-shadow : 1px 1px 1px red ;
+}
+
+#search_bar
+input[type=submit] {
+	color : red ;
+	background-color : white ;
+}
+
+#search_bar 
+button 
+input 
+select {
+	color : blue ;
+}
+
+/**** Search bar end ****/
+
+/**** Edit Form ****/
+.edit_form h1, .edit_form {
+	text-align : center ; 
+}
+
+#product_form,
+input {
+	color : blue ;
+}
+
+.field, .actions {
+	text-align : center ;
+}
+
+/**** Edit Form end ****/
+
 /**** Footer ****/
 
 footer {
