@@ -1,30 +1,32 @@
-<div class="container-fluid content">
+
 	<h1>Contact MnM Mobile Installation</h1>
 	<p>Email us at MusicnMotion@gmail.com</p>
 
 	<%= flash[:notice] %>
-
+<div class="container-fluid content">
 	<%= form_tag("/static_pages/thank_you", id: "contact_form") do %>
 	<div class="row">
-	  <div class="col-md-4">
-	    <div class="form-group">
-	      <%= label_tag :name %>
-	      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
-	    </div>      
-	    <div class="form-group">
-	      <%= label_tag :email, "Email Address" %>
-	      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
-	    </div>
-	    <div class="form-group">
-	      <%= label_tag :message %>
-	      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
-	    </div>      
-	  </div>
-	  <div class="col-md-4" id="contact_page_logo">
-	  	<%= image_tag("MnM logo.jpg", class: "img-responsive company-logo") %>
-	  </div>
+			<div class="col-sm-2 col-md-4">
+			  <div class="form-group">
+			    <%= label_tag :name %>
+			    <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+			  </div>      
+			  <div class="form-group">
+			    <%= label_tag :email, "Email Address" %>
+			    <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+			  </div>
+			  <div class="form-group">
+			    <%= label_tag :message %>
+			    <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+			  </div>  
+			  <%= submit_tag "Send", id: "contact_send" %>   
+				<% end %>    
+			</div>
+			  
+			<div class="col-sm-2 col-md-4" id="contact_page_logo">
+			 <%= image_tag("MnM logo.jpg", class: "img-responsive company-logo") %>
+			</div>
+	
 	</div>
-	<%= submit_tag "Send", id: "contact_send" %>   
-	<% end %>
-
 </div>
+
