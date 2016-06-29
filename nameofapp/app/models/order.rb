@@ -1,4 +1,4 @@
 class Order < ActiveRecord::Base
   belongs_to :product
-  belings_to :user
+  belongs_to :user
 end
