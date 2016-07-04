@@ -1,6 +1,13 @@
 <h1>Editing User</h1>
 
-<%= render 'form' %>
-
+<div class="container-fluid content">
+	<%= render 'form' %>
+  <% if notice %>
+    <p id="notice" class="alert alert-info"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p id="alert" class="notice notice-info"><%= alert %></p>
+  <% end %>
 <%= link_to 'Show', @user %> |
 <%= link_to 'Back', users_path %>
+</div>
