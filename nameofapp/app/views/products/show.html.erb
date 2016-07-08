@@ -1,6 +1,8 @@
 <div class="container-fluid content">
 
-  <p id="notice"><%= notice %></p>
+  <% if notice %>
+    <p id="notice" class="alert alert-info"><%= notice %></p>
+  <% end %>
 
   <div class="row">
     <div class="col-xs-6 col-md-3">
