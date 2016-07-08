@@ -1,14 +1,9 @@
 <div class="container-fluid content">
-
-  <% if notice %>
-    <p id="notice" class="alert alert-info"><%= notice %></p>
-  <% end %>
-
   <div class="row">
     <div class="col-xs-6 col-md-3">
-        <p>
-          <%= image_tag(@product.image_url, class: "img-responsive") %>
-        </p>
+      <p>
+        <%= image_tag(@product.image_url, class: "img-responsive") %>
+      </p>
     </div>
     <div class="col-xs-6 col-md-3">
       <p>
@@ -26,15 +21,27 @@
         <% @product.price %>
       </p>
 
-      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
-    </div>
+      <p>Average Rating: 
+        <div class="rated" data-score="<%= @product.average_rating %>">
+        </div> 
+      </p>
+    </div>   
     <div class="col-xs-6 col-md-3">
-      <%= render 'comments' %>
       <%= render 'new_comment' %>
     </div>
+    <div class="col-xs-6 col-md-3">
+      <p>
+        <%= render 'comments' %>
+      </p>
+    </div>
+    <div class="col-xs-12 col-md-12 pagination_show_page">
+      <p>
+        <%= will_paginate @comments %>
+      </p>
+    </div>
+    <div class="col-xs-12 col-md-12">
+      <%= link_to 'Edit', edit_product_path(@product) %> |
+      <%= link_to 'Back', products_path %>
+    </div>
   </div>
-
-  <%= link_to 'Edit', edit_product_path(@product) %> |
-  <%= link_to 'Back', products_path %>
-
 </div>
