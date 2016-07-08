@@ -113,11 +113,13 @@ footer {
 	padding-bottom : 4% ;
 	background-color : black ;
 	bottom : 0 ;
+	display : table ;
+	width : 100% ;
 }
 
 .content {
 	height : 100% ;
-	padding : 0 ;
+	padding : 15px ;
 	margin : 0 ;
 }
 /**** End footer ****/
@@ -126,3 +128,24 @@ footer {
 .links {
 	text-align : center ;
 }
+
+/**** Carousel ****/
+
+#carousel-example-generic {
+	padding-bottom : 0px ;
+}
+
+.carousel-caption-price {
+	text-align : center ;
+}
+
+.carousel-indicators li {
+	background-color : black ;
+}
+
+.carousel-indicators .active {
+	background-color : red ;
+	text-shadow : 1px 1px 1px red ;
+}
+
+/**** Carousel end ****/

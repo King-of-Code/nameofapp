@@ -7,7 +7,7 @@
 
 		<div id="carousel-example-generic" class="carousel slide content container-fluid" data-ride="carousel">
 		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
+		  <ol class="carousel-indicators" >
 		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
@@ -17,9 +17,13 @@
 		  <div class="carousel-inner" role="listbox">
 		    <% @products.each do |product| %>
 			    <div class="item<%= " active" if product == @products.first %>">
-			      <%= image_tag(product.image_url) %>
+			      <%= link_to image_tag(product.image_url), product %>
 			      <div class="carousel-caption">
-			        <%= link_to product.name , products_path %>
+			        <%= link_to product.name , product %>
+			      </div>
+			      <div class="carousel-caption-price">
+			      	<strong>$</strong>
+			      	<%= product.price %>
 			      </div>
 			    </div>
 		    <% end %>
