@@ -16,4 +16,3 @@ describe Product do
 		expect(Product.new(description: "Camera installed to see blind spots behind you using your aftermarket or factory head unit")).not_to be_valid
 	end
 end
-
