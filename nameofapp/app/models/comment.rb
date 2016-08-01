@@ -6,5 +6,5 @@ class Comment < ActiveRecord::Base
   validates :user, presence: true	 
   validates :product, presence: true
 	validates :rating, numericality: { only_integer: true }
-  
+  validates :user_id, :uniqueness => { :scope => :product_id, :message => "Already commented on product"}
 end

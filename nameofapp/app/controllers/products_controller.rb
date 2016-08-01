@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+logger.debug "DEBUGGING #{params}"
     if params[:q]
       search_term = params[:q]
       @products = Product.where("name ilike ?", "%#{search_term}%")
@@ -16,6 +17,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+logger.debug "DEBUGGING Where comments go"
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 3)
   end
 
@@ -25,6 +27,7 @@ class ProductsController < ApplicationController
   end
 
   # GET /products/1/edit
+byebug
   def edit
   end
 
