@@ -1,15 +1,17 @@
-$(document).on('ready page:load', function(){
-	console.log( "document loaded" );
+var refreshRating = function() {
 	$('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
 	$('.rated').raty({ path: '/assets',
     readOnly: true,
     score: function() {
       return $(this).attr('data-score');
     }
-   });
+   });	
+}
+$(document).on('ready page:load', function(){
+	refreshRating();
 
 	$('#wrapper').tubular({
-		videoId: 'igSkVuxMRsw'
+		videoId: 'hdj0sPvHI0Y'
 
 	}); // where idOfYourVideo is the YouTube ID. });
 

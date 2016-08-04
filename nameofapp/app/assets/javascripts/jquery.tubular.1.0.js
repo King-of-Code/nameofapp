@@ -11,14 +11,13 @@
 |* Sean */
 
 (function ($, window) {
-     console.log( "window loaded" );
 
     // test for feature support and return if failure
     
     // defaults
     var defaults = {
         ratio: 16/9, // usually either 4/3 or 16/9 -- tweak as needed
-        videoId: 'igSkVuxMRsw', // toy robot in space is a good default, no?
+        videoId: 'hdj0sPvHI0Y', // toy robot in space is a good default, no?
         mute: false,
         repeat: true,
         width: $(window).width(),
