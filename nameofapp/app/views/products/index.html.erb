@@ -1,7 +1,9 @@
 <div class="container-fluid products_list">
   <div class="row">
   	<h1>List of a few Products</h1>
-    <%= render @products %>
+  	<% cache(cache_key_for_products) do %>
+    	<%= render @products %>
+    <% end %>
   </div>
 </div>
 
