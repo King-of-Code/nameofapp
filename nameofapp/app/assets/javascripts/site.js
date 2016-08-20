@@ -1,9 +1,4 @@
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
-
-var refreshRating = function() {
+$(document).on('turbolinks:load', function(){
 	$('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
 	$('.rated').raty({ path: '/assets',
     	readOnly: true,
@@ -13,9 +8,6 @@ var refreshRating = function() {
     	}
 	});	
 };
-
-$(document).on('turbolinks:load', function(){
-	refreshRating();
 
 	$('#wrapper').tubular({
 		videoId: 'hdj0sPvHI0Y'
