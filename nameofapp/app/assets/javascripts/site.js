@@ -1,6 +1,6 @@
 var refreshRating = function() {
-	$('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
-	$('.rated').raty({ path: '/assets',
+	$('.rating').raty( { asset_path: '/assets', scoreName: 'comment[rating]' });
+	$('.rated').raty({ asset_path: '/assets',
     	readOnly: true,
     	score: function() {
       		return $(this).attr('data-score');
