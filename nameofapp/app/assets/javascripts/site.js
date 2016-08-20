@@ -9,6 +9,7 @@ var refreshRating = function() {
 };
 
 $(document).on('turbolinks:load', function() {
+	
 	refreshRating();
 
 	$('#wrapper').tubular({
