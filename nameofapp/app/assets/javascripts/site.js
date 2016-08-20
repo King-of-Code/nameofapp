@@ -5,7 +5,7 @@ var refreshRating = function() {
     score: function() {
       return $(this).attr('data-score');
     }
-   });	
+	});	
 }
 $(document).on('turbolinks:load', function(){
 	refreshRating();
