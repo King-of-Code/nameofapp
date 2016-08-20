@@ -3,8 +3,8 @@ $("#new_comment").html("Thanks for your review!");
 $('.product-reviews').prepend("<%= j render @comment %>");
 
 var refreshRating = function() {
-	$('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
-	$('.rated').raty({ path: '/assets',
+	$('.rating').raty( { path: '/assets/images', scoreName: 'comment[rating]' });
+	$('.rated').raty({ path: '/assets/images',
     	readOnly: true,
     	score: function() {
       		return $(this).attr('data-score');
