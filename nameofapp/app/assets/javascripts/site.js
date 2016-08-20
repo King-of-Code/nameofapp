@@ -6,9 +6,9 @@ var refreshRating = function() {
 			return $(this).attr('data-score');
 		}
 	});
-}
+};
 
-$(document).on('ready page:load', function(){
+$(document).on('turbolinks:load', function() {
 	refreshRating();
 
 	$('#wrapper').tubular({
