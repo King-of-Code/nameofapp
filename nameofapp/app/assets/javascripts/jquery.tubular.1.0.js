@@ -11,7 +11,6 @@
 |* Sean */
 
 (function ($, window) {
-
     // test for feature support and return if failure
     
     // defaults

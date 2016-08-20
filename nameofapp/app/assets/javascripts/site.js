@@ -4,8 +4,9 @@ var refreshRating = function() {
     readOnly: true,
     score: function() {
       return $(this).attr('data-score');
+
     }
-	});	
+   });	
 }
 $(document).on('turbolinks:load', function(){
 	refreshRating();
