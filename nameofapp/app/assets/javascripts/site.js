@@ -7,7 +7,7 @@ $(document).on('turbolinks:load', function(){
 
     	}
 	});	
-};
+});
 
 	$('#wrapper').tubular({
 		videoId: 'hdj0sPvHI0Y'
