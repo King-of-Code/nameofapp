@@ -7,7 +7,7 @@ var refreshRating = function() {
     }
    });	
 }
-$(document).on('ready page:load', function(){
+$(document).on('turbolinks:load', function(){
 	refreshRating();
 
 	$('#wrapper').tubular({
