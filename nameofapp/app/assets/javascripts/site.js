@@ -1,6 +1,11 @@
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require_tree .
+
 var refreshRating = function() {
-	$('.rating').raty( { asset_path: '/assets/images', scoreName: 'comment[rating]' });
-	$('.rated').raty({ asset_path: '/assets/images',
+	$('.rating').raty( { path: '/assets/images', scoreName: 'comment[rating]' });
+	$('.rated').raty({ path: '/assets/images',
     	readOnly: true,
     	score: function() {
       		return $(this).attr('data-score');
