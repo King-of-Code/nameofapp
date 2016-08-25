@@ -52,8 +52,10 @@
       </p>
     </div>
     <div class="col-xs-12 col-md-12">
-      <%= link_to 'Edit', edit_product_path(@product) %> |
-      <%= link_to 'Back', products_path %>
+      <% if can? :Edit, edit_product_path %>
+        <%= link_to 'Edit', edit_product_path(@product) %> 
+      <% end %>
+        <%= link_to 'Back', products_path %>
     </div>
   </div>
 </div>
