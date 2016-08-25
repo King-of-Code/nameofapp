@@ -1,0 +1,402 @@
+/* line 4, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/comments.scss */
+h4 {
+  color: red;
+}
+
+/* line 8, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/comments.scss */
+textarea {
+  border-color: red;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 4, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/payments.scss */
+.Thank_you, h2 {
+  text-align: center;
+}
+
+/**** Typography ****/
+/* line 9, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/payments.scss */
+.Thank_you, h2 {
+  color: red;
+}
+/* line 10, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/products.scss */
+.products_list h1 {
+  text-align: center;
+}
+
+/* line 18, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/products.scss */
+.products_list a:visited {
+  color: red;
+}
+
+/* line 27, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/products.scss */
+.carousel-inner
+.item
+img {
+  margin: auto;
+  padding-top: 5%;
+}
+
+/* line 34, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/products.scss */
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
+/* line 43, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/products.scss */
+.carousel-caption a:visited {
+  color: red;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* line 48, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/products.scss */
+.carousel-caption a:hover {
+  background: red;
+  color: white;
+}
+
+/* line 57, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/products.scss */
+.pagination_show_page {
+  text-align: center;
+}
+/* line 1, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 1, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 6, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  color: red;
+  font-family: Georgia;
+}
+
+/* line 11, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  position: relative;
+  margin: 0;
+}
+
+/* line 16, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+nav ul {
+  color: white;
+  text-shadow: 1px 1px 1px red;
+}
+
+/* line 21, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.nav-logo img {
+  height: 140%;
+}
+
+/* line 25, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.products h1 {
+  text-align: center;
+}
+
+/**** Search bar ****/
+/* line 30, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#search_bar {
+  display: inline-block;
+  padding-top: 12px;
+}
+
+/* line 35, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#search_bar
+label {
+  color: white;
+  text-shadow: 1px 1px 1px red;
+}
+
+/* line 41, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#search_bar
+input[type=submit] {
+  color: red;
+  background-color: white;
+}
+
+/* line 47, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#search_bar
+#q {
+  color: blue;
+}
+
+/* line 52, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#notice {
+  margin-bottom: 0;
+}
+
+/**** Search bar end ****/
+/**** About page ****/
+/* line 60, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#company-logo {
+  opacity: 0.4;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 69, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#video-controls, a {
+  text-align: center;
+}
+
+/**** Typography ****/
+/* line 75, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#video-controls a,
+#wrapper p {
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+
+/**** About page end ****/
+/**** Edit Form ****/
+/* line 84, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.edit_form h1, .edit_form {
+  text-align: center;
+}
+
+/* line 88, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#product_form
+button,
+input,
+select,
+textarea {
+  color: blue;
+}
+
+/* line 96, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.field, .actions {
+  text-align: center;
+}
+
+/**** Edit Form end ****/
+/**** Contact Form****/
+/* line 105, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#contact_send {
+  color: blue;
+}
+
+/* line 109, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#contact_page_logo {
+  margin-left: 20%;
+  padding-top: 5%;
+}
+
+/**** Contact Form end ****/
+/**** Footer ****/
+/* line 117, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.footer-logo {
+  text-align: center;
+}
+
+/* line 121, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.footer-logo img {
+  width: 8%;
+  border: 1px solid white;
+}
+
+/* line 126, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.copyright {
+  color: white;
+  text-shadow: 1px 1px 1px red;
+  text-align: center;
+}
+
+/* line 132, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+footer {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: black;
+  bottom: 0;
+  display: table;
+  width: 100%;
+  z-index: 100;
+  position: relative;
+}
+
+/* line 143, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.content {
+  height: 100%;
+  padding: 15px;
+  margin: 0;
+}
+
+/**** End footer ****/
+/**** Log-in form ****/
+/* line 152, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.log-in,
+.links {
+  text-align: center;
+}
+
+/* line 157, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.field {
+  width: 20%;
+  margin: auto;
+}
+
+/**** Log-in form end ****/
+/**** Carousel ****/
+/* line 166, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+#carousel-example-generic {
+  padding-bottom: 0px;
+}
+
+/* line 170, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-caption-price {
+  text-align: center;
+}
+
+/* line 174, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators li {
+  background-color: black;
+}
+
+/* line 178, /Users/sdu/nameofapp/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators .active {
+  background-color: red;
+  text-shadow: 1px 1px 1px red;
+}
+
+/**** Carousel end ****/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
