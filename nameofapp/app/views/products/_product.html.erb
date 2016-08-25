@@ -3,8 +3,11 @@
 		<%= image_tag(product.image_url, class: "img-responsive") %>
 	  <h1><%= link_to product.name , product %></h1>
 		<p><%= product.description %></p>
+		<span class="glyphicon glyphicon-usd"></span> 
 		<strong><%= product.price %></strong>
-		<%= link_to 'Edit', edit_product_path(product) %>
-		<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+		<% if can? :edit, :destroy, product %>
+			<%= link_to 'Edit', edit_product_path(product) %>
+			<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+		<% end %>
 	</div><!-- /col -->
 <% end %>
