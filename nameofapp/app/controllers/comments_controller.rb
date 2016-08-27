@@ -10,13 +10,13 @@ class CommentsController < ApplicationController
         format.html { redirect_to @product, notice: 'Review was created successfully.' }
         format.json { render :show, status: :created, location: @product }
       	format.js
-      else
+	  	else
         format.html { redirect_to @product, alert: "Please rate, or did you already comment?" }
         format.json { render json: @comment.errors, status: :unprocessable_entity }
-			end
+			
+	  	end
 		end
 	end
-
 	def destroy
 		@comment = Comment.find(params[:id])
 		product = @comment.product
