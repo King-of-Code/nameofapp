@@ -6,7 +6,7 @@
 		<span class="glyphicon glyphicon-usd"></span> 
 		<strong><%= product.price %></strong>
 		<div class="admin_product">
-			<% if current_admin :manage, product %>
+			<% if can? :manage, product %>
 				<%= link_to 'Edit', edit_product_path(product) %>
 			<% end %>
 			<% if can? :destroy, product %>
