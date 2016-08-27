@@ -52,7 +52,7 @@
       </p>
     </div>
     <div class="col-xs-12 col-md-12">
-      <% if can? :Edit, edit_product_path %>
+      <% if can? :manage, @product %>
         <%= link_to 'Edit', edit_product_path(@product) %> 
       <% end %>
       <%= link_to 'Back', products_path %>
