@@ -5,11 +5,11 @@
 		<p><%= product.description %></p>
 		<span class="glyphicon glyphicon-usd"></span> 
 		<strong><%= product.price %></strong>
-	<% if can? :manage, Product %>
-		<%= link_to 'Edit', edit_product_path(product) %>
-	<% end %>
-	<% if can? :destroy, Product %>
-		<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-	<% end %>
-	</div><!-- /col -->
 <% end %>
+		<% if can? :manage, Product %>
+			<%= link_to 'Edit', edit_product_path(product) %>
+		<% end %>
+		<% if can? :destroy, Product %>
+			<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+		<% end %>
+	</div><!-- /col -->
