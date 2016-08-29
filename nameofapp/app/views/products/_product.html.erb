@@ -1,4 +1,4 @@
-<% cache_if admin?, product do %>
+<% cache (product) do %>
 	<div class="col-sm-2 col-md-4">
 		<%= image_tag(product.image_url, class: "img-responsive") %>
 	  <h1><%= link_to product.name , product %></h1>
@@ -6,7 +6,7 @@
 		<span class="glyphicon glyphicon-usd"></span> 
 		<strong><%= product.price %></strong>
 		<div class="admin_product">
-			<% if can? :manage, @product %>
+			<% if can? :manage, product %>
 				<%= link_to 'Edit', edit_product_path(product) %>
 			<% end %>
 			<% if can? :destroy, product %>
