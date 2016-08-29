@@ -7,9 +7,7 @@ class ProductsController < ApplicationController
     if params[:q]
       search_term = params[:q]
       @products = Product.where("name ilike ?", "%#{search_term}%")
-        Rails.cache.fetch cache_key do
-          
-        end
+      @products = Rails.cache.fetch cache_key
       # return our filtered list here
     else
       @products = Product.all
