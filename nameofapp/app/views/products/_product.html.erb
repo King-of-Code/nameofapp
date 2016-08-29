@@ -1,4 +1,4 @@
-<% cache product do %>
+<% cache product, 'data-turbolinks' => false  do %>
 	<div class="col-sm-2 col-md-4">
 		<%= image_tag(product.image_url, class: "img-responsive") %>
 	  <h1><%= link_to product.name , product %></h1>
