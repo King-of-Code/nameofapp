@@ -8,6 +8,11 @@ class ProductsController < ApplicationController
       search_term = params[:q]
       @products = Product.where("name ilike ?", "%#{search_term}%")
       # return our filtered list here
+      if stale?(last_modified: @product.updated_at.utc, etag: @product.cache_key)
+        respond_to do |wants|
+        # ... normal response processing
+      end
+    end
     else
       @products = Product.all
     end
