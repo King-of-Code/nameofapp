@@ -2,7 +2,7 @@
   <div class="row">
   	<h1>List of a few Products</h1>
   	<% cache(cache_key_for_products) do %>
-    	<%= render partial: 'products/product', collection: @products, cached: true %>
+    	<%= render @products %>
     <% end %>
   </div>
 </div>
