@@ -6,9 +6,9 @@ class ProductsController < ApplicationController
   def index
     if params[:q]
       search_term = params[:q]
-      @products = Product.where("name ilike ?", "%#{search_term}%")
+      @products = Product.where("name ilike ?", "%#{search_term}%"), Rails.cache.write('cache-key')
+
       # return our filtered list here
-      @products = Rails.cache.write('cache-key')
     else
       @products = Product.all
     end
