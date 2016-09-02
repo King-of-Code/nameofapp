@@ -9,4 +9,3 @@ class Comment < ActiveRecord::Base
   validates :user_id, :uniqueness => { :scope => :product_id, :message => "Already commented on product"}
   after_create_commit { CommentUpdateJob.perform_later(self, @user) }
 end
-

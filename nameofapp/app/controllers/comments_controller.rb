@@ -10,8 +10,8 @@ class CommentsController < ApplicationController
         format.html { redirect_to @product, notice: 'Review was created successfully.' }
         format.json { render :show, status: :created, location: @product }
       	format.js
-	  	else
-        format.html { redirect_to @product, alert: "Please rate, or did you already comment?" }
+      else
+        format.html { redirect_to @product, alert: 'Please fill in comment box and rate by clicking a star.', alert: "Please rate, or did you already comment?" }
         format.json { render json: @comment.errors, status: :unprocessable_entity }
 			
 	  	end

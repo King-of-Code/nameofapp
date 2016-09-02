@@ -43,6 +43,7 @@ GEM
     bcrypt (3.1.11-x86-mingw32)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    brakeman (3.3.3)
     builder (3.2.2)
     byebug (9.0.5)
     cancancan (1.15.0)
@@ -138,8 +139,6 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     notiffany (0.1.1)
-      nenv (~> 0.1)
-      shellany (~> 0.0)
     orm_adapter (0.5.0)
     pg (0.18.4)
     pg (0.18.4-x86-mingw32)
@@ -300,6 +299,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  brakeman
   byebug
   cancancan
   coffee-rails (~> 4.2)

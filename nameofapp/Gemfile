@@ -50,6 +50,7 @@ group :development, :test do
   gem 'guard-spork'
   gem 'wdm', '>= 0.1.0' if Gem.win_platform?
   gem 'rails-controller-testing'
+  gem "brakeman", :require => false
 end
 
 group :development do
