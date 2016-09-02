@@ -4,9 +4,11 @@ describe Product do
 	before do
 		@product = Product.create!(name: 'Backup Camera')
 		@user = User.create!(email: 'Jennaferhuey@gmail.com', password: 'Jennafer')
+		@user1 = User.create!(email: 'KidNg@gmail.com', password: 'Wowwow')
+		@user2 = User.create!(email: 'Fayto@gmail.com', password: 'FayFay')
 		@product.comments.create!(rating: 1, user: @user, body: "Doesn't always turn on!")
-		@product.comments.create!(rating: 3, user: @user, body: "Ok product..")
-		@product.comments.create!(rating: 5, user: @user, body: "Amazing! Works how I need it to")	
+		@product.comments.create!(rating: 3, user: @user1, body: "Makes life so much easier!")
+		@product.comments.create!(rating: 5, user: @user2, body: "So convenient for parking")
 	end
 	it "returns the average rating of all comments" do
 		expect(@product.average_rating).to eq (3)
