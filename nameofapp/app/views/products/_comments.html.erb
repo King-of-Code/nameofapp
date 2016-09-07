@@ -1,15 +1,5 @@
 <div class="product-reviews">
 	<% @comments.each do |comment| %>
-      <hr>
-      <p><%= comment.body %></p>
-        <p>
-        	<%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
-        	<% if can? :destroy, comment %>
-        		<%= link_to 'Destroy', product_comment_path(@product, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
-        	<% end %>
-        </p>
-        <p><%= "Rating: #{comment.rating}/5" %></p>
-        <div class="rated" data-score="<%= comment.rating %>"></div>
-        <br>
+    <%=render partial: comment%>
   <% end %>
 </div>
