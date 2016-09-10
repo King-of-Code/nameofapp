@@ -1,0 +1,7 @@
+<% if @comment.errors.include? :user_id %>
+	$(".new_comment_error").html("You already commented")
+<% elsif @comment.errors.include? :rating %>
+	$(".new_comment_error").html("Please provide a rating")
+<% elsif @comment.errors.include? :body %>
+	$(".new_comment_error").html("You forgot to place your review")
+<% end %>

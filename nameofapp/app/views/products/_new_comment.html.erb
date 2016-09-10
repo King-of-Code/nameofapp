@@ -5,7 +5,7 @@
       <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
         <p>
           <%= f.label :body, "Comments" %><br>
-          <%= f.text_area :body, placeholder: "Your review here", :title => "Please type in your review", :required => "required" %>
+          <%= f.text_area :body, placeholder: "Your review here", :title => "Please type in your review" %>
           <%= alert %>
         </p>
         <p>
@@ -13,6 +13,8 @@
         </p>  
         <p>
           <%= f.submit "Submit", class: "btn btn-secondary", :title => "Fill in review and rate with number of stars before submitting." %>
+        </p>
+        <p class="new_comment_error">
         </p>
       <% end %>
     <% end %>
