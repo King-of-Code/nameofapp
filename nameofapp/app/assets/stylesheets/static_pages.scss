@@ -170,3 +170,19 @@ textarea {
 }
 
 /**** Carousel end ****/
+
+/**** Products New Comment Page ****/
+
+.new_comment_error {
+	color : red ;
+}
+
+.new_comment_error img {
+	height : 8% ;
+	padding-left : 16px ;
+}
+
+#new_comment img:after {
+	height : 12% ;
+	padding-left : 16px ;
+}

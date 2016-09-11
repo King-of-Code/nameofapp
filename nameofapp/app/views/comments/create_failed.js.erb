@@ -1,7 +1,10 @@
 <% if @comment.errors.include? :user_id %>
-	$(".new_comment_error").html("You already commented")
+	$(".new_comment_error").html("You already commented");
+	$(".new_comment_error").append("<img src='../assets/Thinking_Face_Emoji.png'/>")
 <% elsif @comment.errors.include? :rating %>
 	$(".new_comment_error").html("Please provide a rating")
+	$(".new_comment_error").append("<img src='../assets/star.ico'/>")
 <% elsif @comment.errors.include? :body %>
 	$(".new_comment_error").html("You forgot to place your review")
+	$(".new_comment_error").append("<img src='../assets/huh_emoji.png'/>")
 <% end %>

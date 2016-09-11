@@ -1,4 +1,6 @@
-$("#new_comment").html("Thanks for your review!");
+$("#new_comment").html("Thanks for your review!")
+$("#new_comment").append("<img src='../assets/thumbs up emoji.jpg'/>")
+
 
 $('.product-reviews').prepend("<%= j render @comment %>");
 
