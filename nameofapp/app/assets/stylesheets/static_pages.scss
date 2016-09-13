@@ -171,11 +171,15 @@ textarea {
 
 /**** Carousel end ****/
 
+/**** Product Reviews ****/
+
+.product-reviews {
+	padding-left : 16px ;
+}
+/**** Products Reviews End ****/
+
 /**** Products New Comment Page ****/
 
-.new_comment_error {
-	color : red ;
-}
 
 .new_comment_error img {
 	height : 8% ;
@@ -186,3 +190,11 @@ textarea {
 	height : 12% ;
 	padding-left : 16px ;
 }
+
+/**** Typography Products New Comment Page ****/
+
+.new_comment_error {
+	color : red ;
+}
+
+/**** Products New Comment Page end ****/
